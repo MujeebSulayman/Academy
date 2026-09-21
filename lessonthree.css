@@ -1,0 +1,95 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image:
+		linear-gradient(rgba(44, 44, 44, 0.7), rgb(0, 0, 0)),
+		url("https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1920&q=80");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.hero-badge {
+	margin-bottom: 30px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	background-color: #151515;
+	border: 1px solid #5d5d5d;
+	padding: 14px 18px;
+	border-radius: 30px;
+	width: fit-content;
+}
+
+.hero-badge span {
+	font-size: 14px;
+	font-weight: 600;
+	color: #c6c6c6;
+}
+
+h1 {
+	font-size: 65px;
+	font-weight: 500;
+	color: #fff;
+    padding-bottom: 20px;
+}
+
+.container p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.button-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.button-btn a,
+.button-btn button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+
+    /* glassmorphism */
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.button-btn a:hover,
+.button-btn button:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
